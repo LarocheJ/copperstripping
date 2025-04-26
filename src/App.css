@@ -1,0 +1,32 @@
+/* Imports */
+@import './styles/Reset.css';
+@import './styles/Header.css';
+@import './styles/Global.css';
+@import './styles/Button.css';
+@import './styles/Typography.css';
+@import './styles/Hero.css';
+
+/* Custom Properties */
+:root {
+  --white: #fff;
+  --black: #020102;
+  --yellow: #FCFB00;
+  --copper: #D8A80B;
+  --light-grey: #F7F6F2;
+}
+
+/* Main */
+main {
+  background: url('./assets/copper_weighing_bg.webp') no-repeat;
+  background-size: cover;
+  background-position: top 50% left 75%;
+  padding-block: 4rem;
+}
+
+/* Layout */
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+

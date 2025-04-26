@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    gap: 4rem;
+    padding-block: 2rem;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: var(--white);
+}

@@ -1,0 +1,22 @@
+.hero {
+    padding-block: 18rem;
+}
+
+.hero__content {
+    max-width: 860px;
+}
+
+.hero__title {
+    margin: 0 0 4rem;
+}
+
+.hero__description {
+    margin: 0 0 2rem;
+    max-width: 500px;
+}
+
+.hero__button-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

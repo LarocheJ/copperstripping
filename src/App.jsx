@@ -1,14 +1,17 @@
-import { useState } from 'react'
 import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-     
-    </>
-  )
+	return (
+		<>
+			<main className="section-dark">
+				<Header />
+				<Hero />
+			</main>
+		</>
+	)
 }
 
 export default App
