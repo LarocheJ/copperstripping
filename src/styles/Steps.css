@@ -1,0 +1,58 @@
+.steps__container {
+    /* display: flex;
+    align-items: stretch;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+}
+
+.step {
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 8rem clamp(3rem, 3vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex: 1 1 320px; */
+}
+
+/* Make the third column take up all the available space when there's not enough room for 3 side by side columns */
+/* .step:nth-child(3) { 
+    grid-column: span 2;
+} */
+
+.step__icon {
+    display: block;
+    max-width: 108px;
+    margin: 0 auto 3rem;
+}
+
+.step__title {
+    margin: 0 0 2rem;
+}
+
+.step__description {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1120px) {
+  .step:nth-child(3) {
+    grid-column: 1 / -1; /* Make it take full width */
+  }
+}
+
+/* @media (max-width: 1120px) {
+  .step:nth-child(3) {
+    grid-column: span 2
+  }
+}
+
+@media (max-width: 800px) {
+  .step:nth-child(3) {
+    grid-column: span 1
+  }
+} */

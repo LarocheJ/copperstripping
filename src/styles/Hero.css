@@ -1,5 +1,7 @@
 .hero {
     padding-block: 18rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero__content {
@@ -18,5 +20,6 @@
 .hero__button-group {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }

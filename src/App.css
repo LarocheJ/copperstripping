@@ -5,6 +5,7 @@
 @import './styles/Button.css';
 @import './styles/Typography.css';
 @import './styles/Hero.css';
+@import './styles/Steps.css';
 
 /* Custom Properties */
 :root {
@@ -13,6 +14,7 @@
   --yellow: #FCFB00;
   --copper: #D8A80B;
   --light-grey: #F7F6F2;
+  --box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Main */
@@ -25,8 +27,13 @@ main {
 
 /* Layout */
 .container {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-inline: 2rem;
+  padding-inline: 4rem;
 }
 
+@media (max-width: 680px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}

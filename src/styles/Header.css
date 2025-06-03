@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    flex-wrap: wrap;
+    position: relative;
     top: 0;
     gap: 4rem;
     padding-block: 2rem;
+    z-index: 1;
 }
 
 .logo {
-    font-size: 4rem;
+    font-size: clamp(3rem, 6vw, 4rem);
     font-weight: 900;
     color: var(--white);
 }
@@ -17,6 +19,7 @@
 .nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 4rem;
 }
 

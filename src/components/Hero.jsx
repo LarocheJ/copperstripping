@@ -10,7 +10,6 @@ export default function Hero() {
                     <Button title="" link="#" />
                     <Button title="Call Now" link="#" secondary={true} />
                 </div>
-                
             </div>
         </section>
     )

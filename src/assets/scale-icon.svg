@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Kitchen Scale</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer2"
+  cx="32" cy="42" r="10" fill="none" stroke="#202020" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2"></circle>
+  <path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M32 42l7.1-7.1M34 24V12h19a2 2 0 0 0 1.4-.5l4-4a2 2 0 0 0-2.8-2.8L52.2 8H11.8L8.4 4.6a2 2 0 1 0-2.8 2.8l4 4a2 2 0 0 0 1.4.6h19v12"></path>
+  <path data-name="layer1" fill="none" stroke="#202020" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M12 24h40l8 36H4l8-36z"></path>
+</svg>
