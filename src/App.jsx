@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Steps from './components/Steps'
+import Prices from './components/Prices'
 
 function App() {
 
@@ -12,8 +13,8 @@ function App() {
 				<Hero />
 			</main>
 			<Steps />
-			{/* <Prices />
-			<ChooseUs />
+			 <Prices />
+			{/*<ChooseUs />
 			<Faq />
 			<Contact />
 			<Footer /> */}

@@ -6,13 +6,38 @@
     padding-block: 8rem;
 }
 
-.section h2 {
+.section--center {
     text-align: center;
-    margin-block-end: 6rem;
 }
 
 .section-dark {
     color: var(--white);
+}
+
+.section--grey {
+    background-color: var(--light-grey);
+}
+
+.section h2,
+.section h3 {
+    text-transform: capitalize;
+}
+
+.section a {
+    color: var(--copper);
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    margin-block-end: 2rem;
+}
+
+.section-title--spaced {
+    margin-block-end: 6rem;
 }
 
 .overlay {

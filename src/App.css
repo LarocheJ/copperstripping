@@ -6,6 +6,7 @@
 @import './styles/Typography.css';
 @import './styles/Hero.css';
 @import './styles/Steps.css';
+@import './styles/Split-section.css';
 
 /* Custom Properties */
 :root {

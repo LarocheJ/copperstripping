@@ -5,9 +5,9 @@ import Dollar from '../assets/dollar-icon.svg';
 
 export default function HowItWorks() {
     return (
-        <section className="steps section">
+        <section className="steps section section--center" id="how-it-works">
             <div className="container">
-                <h2 className="steps__title">How It Works</h2>
+                <h2 className="steps__title section-title section-title--spaced">How It Works</h2>
                 <div className="steps__container">
                     <Step 
                         icon={Clock} 

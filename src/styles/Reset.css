@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,4 +14,12 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: var(--black);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin-block-end: 1rem;
 }
