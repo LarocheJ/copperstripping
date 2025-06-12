@@ -36,6 +36,10 @@
     margin-block-end: 2rem;
 }
 
+.section-title--center {
+    text-align: center;
+}
+
 .section-title--spaced {
     margin-block-end: 6rem;
 }
