@@ -1,0 +1,10 @@
+.feature-list__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-block-end: 4rem;
+}
+
+.feature-list__icon img {
+    max-width: 64px;
+}

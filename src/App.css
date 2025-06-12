@@ -7,6 +7,8 @@
 @import './styles/Hero.css';
 @import './styles/Steps.css';
 @import './styles/Split-section.css';
+@import './styles/ChooseUs.css';
+@import './styles/Feature.css';
 
 /* Custom Properties */
 :root {
