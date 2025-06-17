@@ -1,0 +1,57 @@
+.dropdown {
+    background-color: var(--white);
+    margin-block-end: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.dropdown::details-content {
+    display: block;
+	block-size: 0;
+	overflow: hidden;
+    transition-timing-function: ease;
+	transition-property: block-size, content-visibility, opacity;
+	transition-duration: 0.3s;
+	transition-behavior: allow-discrete;
+    opacity: 0;
+}
+
+.dropdown[open]::details-content {
+    block-size: auto;
+    block-size: calc-size(auto, size);
+    opacity: 1;
+}
+
+.dropdown[open] .dropdown__summary::after {
+    transform: rotateX(180deg) translateY(0.25rem);
+}
+
+.dropdown::marker {
+    content: none;
+}
+
+.dropdown__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 3rem;
+}
+
+.dropdown__summary::after {
+    content: url('../assets/chevron-icon.svg');
+    width: 24px;
+    position: relative;
+    top: 0.2rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown__chevron {
+    display: block;
+    width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown__content {
+    padding: 0 3rem 3rem;
+}

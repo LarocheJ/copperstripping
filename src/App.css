@@ -9,6 +9,7 @@
 @import './styles/Split-section.css';
 @import './styles/ChooseUs.css';
 @import './styles/Feature.css';
+@import './styles/Dropdown.css';
 
 /* Custom Properties */
 :root {
