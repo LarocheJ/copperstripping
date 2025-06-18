@@ -5,6 +5,7 @@ import Steps from './components/Steps'
 import Prices from './components/Prices'
 import ChooseUs from './components/ChooseUs'
 import Faq from './components/Faq'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,8 +19,7 @@ function App() {
 			 <Prices />
 			<ChooseUs />
 			<Faq />
-			{/* <Contact />
-			<Footer /> */}
+			<Footer />
 		</>
 	)
 }

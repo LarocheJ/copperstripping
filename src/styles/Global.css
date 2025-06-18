@@ -23,12 +23,12 @@
     text-transform: capitalize;
 }
 
-.section a {
+.section a:not(.button) {
     color: var(--copper);
     text-decoration: none;
 }
 
-.section a:hover {
+.section a:not(.button):hover {
     text-decoration: underline;
 }
 
