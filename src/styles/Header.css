@@ -1,13 +1,30 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    gap: 4rem;
+    padding-block: 2rem;
+    z-index: 1;
+    transition: all 0.2s ease;
+    z-index: 999;
+}
+
+.header--scrolled {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.header--scrolled a,
+.header--scrolled .logo {
+    color: var(--black);
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    top: 0;
-    gap: 4rem;
-    padding-block: 2rem;
-    z-index: 1;
 }
 
 .logo {
