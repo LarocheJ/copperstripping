@@ -11,15 +11,15 @@
     transition: all 0.2s ease;
 }
 
-/* .button::after { 
-    content: url('../assets/right-arrow-icon.svg');
+.button::after { 
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path stroke="%231E1E1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 16h28m0 0L16 2m14 14L16 30"/></svg>'); 
     display: block;
-    transform: translateY(0.35rem);
+    transform: translateY(0.3rem);
     opacity: 0;
-    margin-left: -3rem;
+    margin-left: -2rem;
     transition: all 0.2s ease;
     width: 16px;
-} */
+}
 
 .button:hover {
     transform: scale(1.025);
@@ -27,7 +27,7 @@
 
 .button:hover::after {
     opacity: 1;
-    margin-left: 0;
+    margin-left: 0.5rem;
 }
 
 .button--secondary {
@@ -35,9 +35,9 @@
     color: var(--white);
 }
 
-/* .button--secondary::after {
-    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill:"%23fff"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>');
-} */
+.button--secondary::after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M2 16h28m0 0L16 2m14 14L16 30"/></svg>'); 
+}
 
 /* .button--secondary:hover {
     color: var(--black);

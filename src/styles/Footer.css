@@ -5,11 +5,14 @@
 
 .footer__contact {
     margin: 0 auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__contact a {
+    display: inline;
     text-align: center;
-    display: block;
     margin-block-end: 1rem;
     font-size: 2rem;
 }
