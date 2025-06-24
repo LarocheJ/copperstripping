@@ -26,6 +26,11 @@ export default function Header() {
                     <a className="nav__item" href="">Contact</a>
                     <Button title="" link="#" />
                 </nav>
+                <div className="hamburger">
+                    <span className="hamburger__line"></span>
+                    <span className="hamburger__line"></span>
+                    <span className="hamburger__line"></span>
+                </div>
             </div>
         </header>
     )
