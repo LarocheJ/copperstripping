@@ -4,7 +4,7 @@ const today = new Date();
 export default function Footer() {
     return (
         <>
-            <footer className="footer section">
+            <footer className="footer section" id="contact">
                 <div className="container">
                     <h2 className="footer__title section-title section-title--center">Let's Get Started</h2>
                     <div className="button-container button-container--center">

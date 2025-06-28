@@ -26,12 +26,12 @@ export default function Header() {
     return(
         <header className={`header` + (scrolled ? " header--scrolled" : "")}>
             <div className="container">
-                <span className="logo"><span className="color-copper">Copper</span>Stripping</span>
+                <span className="logo"><a href="#"><span className="color-copper">Copper</span>Stripping</a></span>
                 <nav className={`nav${isBurgerOpen ? " nav--active" : ""}`}>
-                    <a className="nav__item" href="">How it works</a>
-                    <a className="nav__item" href="">Pricing</a>
-                    <a className="nav__item" href="">FAQ</a>
-                    <a className="nav__item" href="">Contact</a>
+                    <a className="nav__item" href="#how-it-works">How it works</a>
+                    <a className="nav__item" href="#pricing">Pricing</a>
+                    <a className="nav__item" href="#faq">FAQ</a>
+                    <a className="nav__item" href="#contact">Contact</a>
                     <Button title="" link="#" />
                 </nav>
                 <div className={`hamburger ${isBurgerOpen ? "hamburger--active" : ""}`} onClick={handleBurgerClick}>

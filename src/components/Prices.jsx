@@ -2,7 +2,7 @@ import copperCablesImg from '../assets/copper-cables.webp'
 
 export default function Prices() {
     return (
-        <section className="prices section section--grey" id="prices">
+        <section className="prices section section--grey" id="pricing">
             <div className="container">
                 
                 <div className="split-section">

@@ -29,6 +29,11 @@
     color: var(--white);
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav {
     display: flex;
     align-items: center;

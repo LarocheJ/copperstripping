@@ -2,7 +2,7 @@ import Dropdown from './Dropdown';
 
 export default function Faq() { 
     return (
-        <section className="section section--grey section-faq">
+        <section className="section section--grey section-faq" id="faq">
             <div className="container">
                 <h2 className="section-title section-title--center section-title--spaced">Frequently Asked Questions</h2>
                 <div className="dropdowns">
