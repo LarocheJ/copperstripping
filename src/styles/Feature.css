@@ -6,5 +6,34 @@
 }
 
 .feature-list__icon img {
-    max-width: 64px;
+    width: 64px;
+}
+
+.feature-list__text {
+    margin: 0;
+}
+
+@media all and (max-width: 600px) {
+    .feature-list__item {
+        align-items: flex-start;
+        margin-block-end: 2rem;
+    }
+
+    .feature-list__icon {
+        transform: translateY(0.5rem);
+    }
+    
+    .feature-list__icon img {
+        width: 40px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .feature-list__title {
+        font-size: 2.5rem;
+    }
+
+    .feature-list__icon img {
+        width: 32px;
+    }
 }

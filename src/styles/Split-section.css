@@ -5,6 +5,12 @@
     gap: clamp(3rem, 8vw, 8rem);
 }
 
+.split-section--reverse .split-section__image::after {
+    left: -2.5rem;
+    right: auto;
+    background-color: var(--yellow);
+} 
+
 .split-section__content {
     flex: 50%;
     max-width: 580px;
@@ -31,4 +37,31 @@
     object-fit: cover;
     position: relative;
     z-index: 5;
+}
+
+@media all and (max-width: 960px) {
+    .split-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .split-section--reverse {
+        flex-direction: column-reverse;
+    }
+
+    .split-section__image {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .split-section__image img {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .split-section__image::after {
+        display: none;
+    }   
 }

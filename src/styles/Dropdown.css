@@ -33,7 +33,8 @@
 .dropdown__summary {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 2rem;
     cursor: pointer;
     padding: 3rem;
 }
@@ -42,7 +43,7 @@
     content: url('../assets/chevron-icon.svg');
     width: 24px;
     position: relative;
-    top: 0.2rem;
+    top: 1rem;
     transition: transform 0.3s ease;
 }
 
@@ -54,4 +55,46 @@
 
 .dropdown__content {
     padding: 0 3rem 3rem;
+}
+
+@media all and (max-width: 980px) {
+    .dropdown__summary {
+        padding: 2rem;
+    }
+
+    .dropdown__content {
+        padding: 0 10rem 2rem 2rem;
+    }
+    
+    .dropdown__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .dropdown__content {
+        padding: 0 6rem 2rem 2rem;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .dropdown__summary {
+        gap: 1rem;
+    }
+    
+    .dropdown__title {
+        font-size: 2rem;
+    }
+
+    .dropdown__content {
+        padding: 0 2rem 2rem;
+    }
+
+    .dropdown__summary::after {
+        transform: scale(0.85);
+    }
+
+    .dropdown[open] .dropdown__summary::after {
+     transform: rotateX(180deg) translateY(0.25rem) scale(0.85);
+    }
 }

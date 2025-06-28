@@ -42,3 +42,9 @@ main {
     padding-inline: 2rem;
   }
 }
+
+@media (max-width: 360px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}

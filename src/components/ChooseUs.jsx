@@ -6,7 +6,7 @@ export default function Prices() {
         <section className="choose-us section" id="choose-us">
             <div className="container">
                 
-                <div className="split-section">
+                <div className="split-section split-section--reverse">
                     <div className="split-section__image">
                         <img src={handshake} alt="Various copper cables that had the ends trimmed" className="prices__image" />
                     </div>

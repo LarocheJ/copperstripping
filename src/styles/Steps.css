@@ -1,11 +1,7 @@
 .steps__container {
-    /* display: flex;
-    align-items: stretch;
-    justify-content: center; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    /* flex-wrap: wrap; */
 }
 
 .step {
@@ -16,13 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* flex: 1 1 320px; */
 }
-
-/* Make the third column take up all the available space when there's not enough room for 3 side by side columns */
-/* .step:nth-child(3) { 
-    grid-column: span 2;
-} */
 
 .step__icon {
     display: block;
@@ -39,20 +29,22 @@
     margin: 0 auto;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1100px) {
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .step:nth-child(3) {
     grid-column: 1 / -1; /* Make it take full width */
   }
 }
 
-/* @media (max-width: 1120px) {
-  .step:nth-child(3) {
-    grid-column: span 2
+@media (max-width: 680px) {
+  .steps__container {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    padding: 4rem clamp(3rem, 3vw, 4rem);
   }
 }
-
-@media (max-width: 800px) {
-  .step:nth-child(3) {
-    grid-column: span 1
-  }
-} */

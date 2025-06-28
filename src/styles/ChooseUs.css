@@ -1,3 +1,9 @@
 .choose-us__title {
     margin-block-end: 6rem;
 }
+
+@media all and (max-width: 600px) {
+    .choose-us__title {
+        margin-block-end: 4rem;
+    }
+}
