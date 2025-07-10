@@ -35,7 +35,7 @@ export default function Header() {
                     <a className="nav__item" href="#pricing" onClick={handleLinkClick}>Pricing</a>
                     <a className="nav__item" href="#faq" onClick={handleLinkClick}>FAQ</a>
                     <a className="nav__item" href="#contact" onClick={handleLinkClick}>Contact</a>
-                    <Button title="" link="#" />
+                    <Button title="" link="https://jimmylar91.youcanbook.me" newTab={true} />
                 </nav>
                 <div className={`hamburger ${isBurgerOpen ? "hamburger--active" : ""}`} onClick={handleBurgerClick}>
                     <span className="hamburger__line"></span>

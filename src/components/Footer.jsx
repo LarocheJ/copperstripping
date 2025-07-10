@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="container">
                     <h2 className="footer__title section-title section-title--center">Let's Get Started</h2>
                     <div className="button-container button-container--center">
-                        <Button link="#" title="Schedule a Pickup" classes="footer__button" />
+                        <Button link="https://jimmylar91.youcanbook.me" title="Schedule a Pickup" classes="footer__button" newTab={true} />
                     </div>
                     <div className="footer__contact">
                         <a href="mailto:info@copperstripping.com">info@copperstripping.com</a>
