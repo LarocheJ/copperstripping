@@ -6,8 +6,13 @@ export default function Header() {
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
     const handleBurgerClick = () => {
-        console.log("Burger clicked");
         setIsBurgerOpen(!isBurgerOpen);
+    }
+
+    const handleLinkClick = () => {
+        if (isBurgerOpen) {
+            setIsBurgerOpen(false);
+        }
     }
 
     useEffect(() => {
@@ -21,17 +26,15 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
 
-
-
     return(
         <header className={`header` + (scrolled ? " header--scrolled" : "")}>
             <div className="container">
                 <span className="logo"><a href="#"><span className="color-copper">Copper</span>Stripping</a></span>
                 <nav className={`nav${isBurgerOpen ? " nav--active" : ""}`}>
-                    <a className="nav__item" href="#how-it-works">How it works</a>
-                    <a className="nav__item" href="#pricing">Pricing</a>
-                    <a className="nav__item" href="#faq">FAQ</a>
-                    <a className="nav__item" href="#contact">Contact</a>
+                    <a className="nav__item" href="#how-it-works" onClick={handleLinkClick}>How it works</a>
+                    <a className="nav__item" href="#pricing" onClick={handleLinkClick}>Pricing</a>
+                    <a className="nav__item" href="#faq" onClick={handleLinkClick}>FAQ</a>
+                    <a className="nav__item" href="#contact" onClick={handleLinkClick}>Contact</a>
                     <Button title="" link="#" />
                 </nav>
                 <div className={`hamburger ${isBurgerOpen ? "hamburger--active" : ""}`} onClick={handleBurgerClick}>
